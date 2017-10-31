@@ -2,7 +2,7 @@
 
 import pandas as pd
 import numpy as np
-import matplotlib as plt
+
 
 
 def parseYearsAndMonths(row):
@@ -25,7 +25,7 @@ def importAndClean():
 
     #drops documentation at end of file
     climateDF=climateDF.iloc[0:43397]
-    
+
     #converts to string to check length and parse
     climateDF["year"].apply(lambda s: str(s))
     #runs parse function
